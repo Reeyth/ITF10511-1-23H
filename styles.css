@@ -5,15 +5,18 @@ body {
     overflow: scroll;
 }
 
+
 li {
     list-style: none;
 }
 
 nav ul {
+    padding: 0;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 0 2rem 0 2rem;
 }
 
 .logo {
@@ -21,7 +24,7 @@ nav ul {
 }
 
 nav li {
-    margin-left: 1rem;
+    margin: 0 0.5rem 0 0.5rem;
 }
 
 a {
@@ -86,6 +89,10 @@ nav a.active {
 
 #about-our-company {
     background-color: #e6bd43;
+}
+
+#about-our-company p {
+    width: 80%;
 }
 
 #about-us-btn {
