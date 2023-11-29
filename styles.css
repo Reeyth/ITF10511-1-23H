@@ -4,6 +4,7 @@ body {
     margin: 0;
     overflow: scroll;
 }
+
 main {
     display: grid;
     grid-template-rows: auto;
@@ -12,11 +13,54 @@ main {
 
 @media only screen and (max-width: 1600px) {
     main {
-        display: grid;
-        grid-template-rows: auto;
         grid-template-columns: 1fr;
     }
+
+    .grid-cover,
+    .grid-middle {
+        grid-column: 1;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem !important;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .flex-column p {
+        width: 80%;
+    }
+
+    .about-our-company {
+        flex-direction: column;
+    }
+
+    .about-our-company article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .about-us-header article {
+        top: 50% !important;
+        left: 50% !important;
+        width: 250px !important;
+        min-height: 350px;
+    }
+
 }
+
 
 .grid-cover {
     grid-column: 1 / span 3;
@@ -26,14 +70,12 @@ main {
     grid-column: 2;
 }
 
-
-
 h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 h3 {
@@ -53,12 +95,12 @@ nav ul {
     margin: 1rem 2rem;
 }
 
-.logo {
-    margin-right: auto;
+nav ul li {
+    margin: 0 0.5rem 0 0;
 }
 
-nav li {
-    margin: 0 0.5rem;
+.logo {
+    margin-right: auto;
 }
 
 a {
@@ -96,7 +138,7 @@ nav a.active {
 }
 
 .flex-column {
-    height: 25rem;
+    min-height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,56 +151,61 @@ nav a.active {
 }
 
 .flex-row {
+    min-height: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    
+    padding: 1rem 0rem;
 }
 
 .flex-row img {
     margin: 3rem;
 }
 
-#about-our-company {
+.about-our-company {
     background-color: #e6bd43;
 }
 
-#about-our-company p {
+.about-our-company p {
     width: 80%;
 }
 
-#about-us-btn {
+.about-us-btn {
     border: 2px solid black;
 }
 
-#our-services {
-    height: 20rem;
+.our-services {
+    padding: 1rem 0rem;
+    display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    min-height: 20rem;
 }
 
-#our-services h2 {
-    text-align: center;
+.our-services h2 {
     width: 100%;
 }
 
-#our-services article {
+.our-services article {
     margin: auto;
-    text-align: center;
-    width: 20%;
+    width: 250px;
 }
 
-#our-services i {
+.our-services i {
     font-size: 2.5rem;
 }
 
 .news-letter {
-    height: 10rem;
+    min-height: 10rem;
     margin: 2rem 0;
 }
 
 .news-letter input {
     margin: 0.5rem;
+}
+
+.news-letter form {
+    display: flex;
 }
 
 footer {
@@ -290,7 +337,8 @@ footer a {
     background-color: white;
     border-radius: 5px;
     padding: 1rem;
-    width: 30%;
+    width: 500px;
+
 }
 
 .about-us-header img {
@@ -300,13 +348,13 @@ footer a {
 }
 
 .our-clients {
+    min-height: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
     background-color: #e6bd43;
-    height: 25rem;
 }
 
 .our-clients h1 {
@@ -323,13 +371,15 @@ footer a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: left;
     justify-content: space-evenly;
 }
 
 .contact-us form {
+    margin: 0 1rem 0 1rem;
     display: flex;
+    width: 500px;
     flex-direction: column;
-    width: 30%;
 }
 
 .contact-us input:focus,
@@ -350,14 +400,10 @@ footer a {
 }
 
 .contact-us article {
-    float: right;
+    margin: 0 1rem 0 1rem;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    width: 40%;
-}
-
-.contact-us p {
-    width: 60%;
 }
 
 .contact-us a {
@@ -367,7 +413,7 @@ footer a {
 }
 
 .google-maps {
-    margin-top: 3rem;
+    margin: 3rem 0 0 0;
     width: 100%;
     height: 20rem;
     border-style: none;
