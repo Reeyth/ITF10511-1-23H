@@ -10,12 +10,15 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="styles.css" />
 		<title>Home</title>
-        <link rel="icon" type="image/x-icon" href="/ressurser/logo1.png">
+		<link rel="icon" type="image/x-icon" href="/ressurser/logo1.png" />
 	</head>
 	<body>
 		<header>
@@ -29,12 +32,14 @@
 					<li><a href="index.html" class="active">Home</a></li>
 					<li><a href="products.html">Portfolio</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="about.html#jump-to-contact-us" class="btn">Contact</a></li>
+					<li>
+						<a href="about.html#jump-to-contact-us" class="btn">Contact</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<article class="flex-column">
+			<article class="flex-column grid-cover">
 				<video
 					id="headline-video"
 					src="/ressurser/mountains.mp4"
@@ -52,18 +57,18 @@
 					<button class="btn">Read more about our servies</button>
 				</a>
 			</article>
-			<article class="flex-column">
-				<h1>Engaging subheading. What can you help your visitors with</h1>
+			<article class="flex-column grid-cover">
+				<h2>Engaging subheading. What can you help your visitors with</h2>
 				<p>
 					Vestibulum a sapien eu dolor molestie tincidunt. Donec malesuada lorem
 					id lacus sagittis, id euismod risus accumsan. Aenean rutrum odio at
 					ipsum pretium, non pharetra felis tincidunt.
 				</p>
 			</article>
-			<article class="flex-row" id="about-our-company">
+			<article class="flex-row grid-cover" id="about-our-company">
 				<img src="https://placehold.co/400x400" alt="placeholder" />
 				<div>
-					<h2>About Our Company</h2>
+					<h3>About Our Company</h3>
 					<p>
 						Maecenas efficitur odio non ornare fringilla. Suspendisse eu
 						placerat ex. Cras elementum lacinia commodo. Sed aliquet facilisis
@@ -76,33 +81,31 @@
 					</a>
 				</div>
 			</article>
-			<section class="flex-column" id="our-services">
-				<h1>Our Services</h1>
-				<ul class="flex-row">
-					<li>
-						<i class="fa-solid fa-users"></i>
-						<h3>Branding</h3>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-					</li>
-					<li>
-						<i class="fa-solid fa-cloud-arrow-down"></i>
-						<h3>Branding</h3>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-					</li>
-					<li>
-						<i class="fa-solid fa-code"></i>
-						<h3>Branding</h3>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-					</li>
-					<li>
-						<i class="fa-solid fa-wifi"></i>
-						<h3>Branding</h3>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-					</li>
-				</ul>
+			<section class="flex-row grid-middle" id="our-services">
+				<h2>Our Services</h2>
+				<article>
+					<i class="fa-solid fa-users"></i>
+					<h3>Branding</h3>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</article>
+				<article>
+					<i class="fa-solid fa-cloud-arrow-down"></i>
+					<h3>Branding</h3>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</article>
+				<article>
+					<i class="fa-solid fa-code"></i>
+					<h3>Branding</h3>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</article>
+				<article>
+					<i class="fa-solid fa-wifi"></i>
+					<h3>Branding</h3>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</article>
 			</section>
-			<section class="flex-column news-letter">
-				<h1>Sign up for our newsletter</h1>
+			<section class="flex-column news-letter grid-middle">
+				<h2>Sign up for our newsletter</h2>
 				<form action="" class="flex-row">
 					<input type="email" id="email" placeholder="OlaNordmann@epost.no" />
 					<input type="submit" class="btn" value="Sign me up!" />
