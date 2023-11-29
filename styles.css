@@ -1,0 +1,422 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    overflow: scroll;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+@media only screen and (max-width: 1600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-cover,
+    .grid-middle {
+        grid-column: 1;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem !important;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .flex-column p {
+        width: 80%;
+    }
+
+    .about-our-company {
+        flex-direction: column;
+    }
+
+    .about-our-company article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .about-us-header article {
+        top: 50% !important;
+        left: 50% !important;
+        width: 250px !important;
+        min-height: 350px;
+    }
+
+}
+
+
+.grid-cover {
+    grid-column: 1 / span 3;
+}
+
+.grid-middle {
+    grid-column: 2;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin: 0 1rem 0 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0 1rem 0 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem 2rem;
+}
+
+nav ul li {
+    margin: 0 0.5rem 0 0;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    font-weight: 800;
+    border-bottom: solid 3px #e6bd43;
+}
+
+.btn {
+    border: none;
+    display: block;
+    color: black;
+    font-weight: 800;
+    background-color: #e6bd43;
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    color: #e6bd43;
+    background-color: black;
+}
+
+#headline-video {
+    min-width: 100%;
+    height: 25rem;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.flex-column {
+    min-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column p {
+    width: 50%;
+    text-align: center;
+}
+
+.flex-row {
+    min-height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.flex-row img {
+    margin: 3rem;
+}
+
+.about-our-company {
+    background-color: #e6bd43;
+}
+
+.about-our-company p {
+    width: 80%;
+}
+
+.about-us-btn {
+    border: 2px solid black;
+}
+
+.our-services {
+    padding: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    min-height: 20rem;
+}
+
+.our-services h2 {
+    width: 100%;
+}
+
+.our-services article {
+    margin: auto;
+    width: 250px;
+}
+
+.our-services i {
+    font-size: 2.5rem;
+}
+
+.news-letter {
+    min-height: 10rem;
+    margin: 2rem 0;
+}
+
+.news-letter input {
+    margin: 0.5rem;
+}
+
+.news-letter form {
+    display: flex;
+}
+
+footer {
+    padding: 1.5rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 50px;
+    margin: 0.5rem;
+}
+
+.to-top {
+    position: fixed;
+    text-align: center;
+    background-color: #252525;
+    bottom: 1rem;
+    right: 1.5rem;
+    border-radius: 0.5rem;
+    width: 2.5rem;
+}
+
+.to-top i {
+    margin: auto;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.portfolio-header {
+    position: relative;
+    height: 25rem;
+    width: 100%;
+}
+
+.portfolio-header h1 {
+    position: absolute;
+    font-size: 3rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.portfolio-header img {
+    object-fit: cover;
+    min-width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+.products-container h2 {
+    margin-top: 5rem;
+    min-width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #e6bd43;
+}
+
+.nav-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-section button {
+    margin: 0.2rem;
+    font-size: large;
+    border: solid 2px black;
+    display: block;
+    color: black;
+    padding: 0.2rem;
+    border-radius: 2px;
+}
+
+.nav-section button:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+.portfolio-image {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: auto;
+    object-fit: cover;
+    transition: transform .3s;
+}
+
+.portfolio-image:hover {
+    transform: scale(1.1);
+}
+
+.branding,
+.design,
+.development {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.branding article,
+.design article,
+.development article {
+    max-width: 692px;
+    min-width: 200px;
+    margin: 1rem;
+    flex-grow: 1;
+}
+
+.about-us-header {
+    position: relative;
+    height: 25rem;
+    width: 100%;
+}
+
+.about-us-header article {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 500px;
+
+}
+
+.about-us-header img {
+    object-fit: cover;
+    min-width: 100%;
+    height: 100%;
+}
+
+.our-clients {
+    min-height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #e6bd43;
+}
+
+.our-clients h1 {
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.our-clients img {
+    margin: 1rem;
+}
+
+.contact-us {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+.contact-us form {
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+    outline: none;
+}
+
+.contact-us form input[type=text],
+.contact-us form [type=submit] {
+    margin: 0.5rem 0;
+    width: 30%;
+}
+
+.contact-us form textarea {
+    margin: 0.5rem 0;
+    width: 80%;
+    resize: vertical;
+}
+
+.contact-us article {
+    margin: 0 1rem 0 1rem;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us a {
+    text-decoration: underline;
+    text-decoration-color: #6c36f4;
+    color: #6c36f4;
+}
+
+.google-maps {
+    margin: 3rem 0 0 0;
+    width: 100%;
+    height: 20rem;
+    border-style: none;
+}
