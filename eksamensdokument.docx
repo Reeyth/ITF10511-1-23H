@@ -1,0 +1,22 @@
+
+Vanskelighetsgrad: A
+
+Redegjørelser/Forutsetninger:
+
+???"Siden skal ha en maks bredde på 1600px" - Jeg tolket dette som at hovedinnholdet med unntak av innhold som header/navbar skal være max 1600px
+
+"Alle artikkelkortene på portfoliosiden skal ha en maks bredde på 350px og en min bredde på 200px"
+"På portfolio siden skal det brukes flexbox for å skape innholds-flyt i de ulike seksjonene. Artikkelkortene skal vokse og minske basert på den tilgjengelige plassen (hint: flex-grow), men de skal ikke blir større enn 692px."
+???
+
+
+
+Kilder:
+https://www.w3schools.com/howto/howto_css_zoom_hover.asp
+https://www.w3schools.com/html/html_forms.asp
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+Icons - https://fontawesome.com/icons
+pexels-andrew-neel-6633920.jpg - https://www.pexels.com/photo/apple-iphone-desk-laptop-6633920/
+Font - https://fonts.google.com/specimen/Roboto
